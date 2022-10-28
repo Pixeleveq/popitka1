@@ -10,6 +10,11 @@ Section:NewButton("Teleport", "Spawn", function()
     game:GetService("Workspace")["RNG_Klop"].HumanoidRootPart.CFrame =game:GetService("Workspace")["The Overworld"].CFrame
 end)
 
-Section:NewTextBox("TextboxText", "TextboxInfo", function(txt)
-	game:GetService("Workspace")["RNG_Klop"].Humanoid.HipHeight = txt
+Section:NewDropdown("DropdownText", "DropdownInf", {"Option 1", "Option 2", "Option 3"}, function(asd)
+    if asd == "Option 1"
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+elseif asd == "Option 2"
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+elseif asd == "Option 3"
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
 end)
