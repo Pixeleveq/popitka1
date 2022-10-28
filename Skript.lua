@@ -9,3 +9,7 @@ local Section = Tab:NewSection("TP to spawn")
 Section:NewButton("Teleport", "Spawn", function()
     game:GetService("Workspace")["RNG_Klop"].HumanoidRootPart.CFrame =game:GetService("Workspace")["The Overworld"].CFrame
 end)
+
+Section:NewTextBox("TextboxText", "TextboxInfo", function(txt)
+	game:GetService("Workspace")["RNG_Klop"].Humanoid.HipHeight = txt
+end)
